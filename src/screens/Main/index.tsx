@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import {
   FlatList,
   SafeAreaView,
@@ -10,12 +10,16 @@ import {
   ImageBackground,
 } from "react-native";
 import ListItem from "../../components/ListItem";
+import { CartContext } from "../../context/CartContext";
 import Request from "../../data/Request";
 import { styles } from "./styles";
 
 export default function Main({ navigation }) {
   const [db, setDb] = useState<any[]>();
   const [loading, setLoading] = useState(false);
+  const context = useContext(CartContext);
+  
+  
 
   async function loadDb() {
     setLoading(true);
@@ -26,6 +30,7 @@ export default function Main({ navigation }) {
 
   useEffect(() => {
     loadDb();
+
   }, []);
 
 

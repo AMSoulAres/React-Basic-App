@@ -2,7 +2,9 @@ import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#002b30',
+    // backgroundColor: '#002b30',
+    // backgroundColor: "#16052b",
+    backgroundColor: '#280D2C', 
     elevation: -20,
     shadowColor: "#000",
     shadowRadius: 5
@@ -18,11 +20,5 @@ export const styles = StyleSheet.create({
       fontFamily: 'Redrock'
   
     },
-    divider:{
-      height: 1,
-      backgroundColor: "gray",
-      marginHorizontal: 16,
-      marginTop: 16,
-    }
   });
   

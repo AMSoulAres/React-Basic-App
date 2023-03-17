@@ -49,6 +49,7 @@ const ListItem = (props: Props) => {
           </View>
         </View>
       </View>
+      <View style={styles.divider}></View>
     </TouchableOpacity>
   );
 };
@@ -79,7 +80,9 @@ const generateBoxShadowStyle = (
 
 const styles = StyleSheet.create({
   itemWrapper: {
-    backgroundColor: "#F3FCFD",
+    // backgroundColor: "#F3FCFD",
+    // backgroundColor: '#1f0505',
+    backgroundColor: "#362538",
     borderRadius: 8,
     paddingRight: 16,
     width: "90%",
@@ -116,12 +119,21 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 18,
-    color: '#001833'
+    // color: '#001833'
+    color: "#ebf8ff",
   },
   subtitle: {
     marginTop: 8,
     fontSize: 14,
-    color: '#001833'
+    // color: '#001833'
+    color: "#ebf8ff",
+  },
+  divider:{
+    height: 3,
+    backgroundColor: "#F2063D",
+    paddingRight: '43%',
+    paddingLeft: '45%',
+    marginRight: 8
   },
 });
 
