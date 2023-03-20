@@ -3,7 +3,7 @@ import { Navigation } from "../navigation/RootNavigation";
 import Main from "../screens/Main";
 import ProductInfo from "../screens/ProductInfo";
 
-// Não consigo fazer esse context funcionar por nada
+// Não consigo fazer esse context funcionar por nada, não passa as informações do Provider
 
 export interface ContextResponse {
   cart : Cart;
